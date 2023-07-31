@@ -201,7 +201,7 @@ contract("BBSEBank", (accounts) => {
       const borrowerNewEthBalance = Number(
         await web3.eth.getBalance(accounts[1])
       );
-
+        
       expect(borrowerOldEthBalance).to.be.above(borrowerNewEthBalance);
       expect(borrowerNewTokenBalance).to.be.above(borrowerOldTokenBalance);
 
